@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .thumbnail {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+
+<body style="background-color: beige;">
+    <label for="dataSelect">Data Type:</label>
+    <select id="dataSelect">
+        <option value="choose">Choose</option>
+        <option value="posts">Posts</option>
+        <option value="comments">Comments</option>
+        <option value="albums">Albums</option>
+        <option value="photos">Photos</option>
+        <option value="todos">Todos</option>
+        <option value="users">Users</option>
+    </select>
+
+    <table id="dataContainer">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Body/Name</th>
+                <th>Email</th>
+                <th>Thumbnail</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
